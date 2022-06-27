@@ -1,0 +1,23 @@
+.main-div{
+  background-color:rgba(0, 0, 0);
+  display: flex;
+  flex-direction:column;
+  text-align: center;
+  flex-wrap: nowrap;
+}
+
+.btn{
+  width: 130px;
+  height: 50px;
+  color:rgba(40, 102, 27, 0.5);
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+.btn:hover{
+  color:blue ;
+  transition: .4s;
+  background-color: rgb(173, 36, 36);
+  
+}
