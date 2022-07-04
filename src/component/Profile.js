@@ -1,16 +1,21 @@
 import React from 'react'
+import {Link} from "react-router-dom"
+import tachyons from "tachyons"
+import App from '../container/App.css'
 
-const Profile = ({userInfo}) => {
-  
+const Profile = ({userInfo}) => {  
+
   return (
-        <div>
+    
+        <div className="main">
     {
       userInfo.map((item)=>{
         return(
-          <div key ={item.id} >
-          <img  alt= "avatar" src= {item.avatar_url}/><br /> 
+          <div className='main-2' key ={item.id} >
+          <img className='imp ' alt= "avatar" src= {item.avatar_url}/><br /> 
         
-          <button className='btn'>{item.login}</button> 
+          <button className='btn' ><Link  className= "madd"to={`/user/${item.login}`}>More info</Link></button> 
+
           </div>
           
         )  

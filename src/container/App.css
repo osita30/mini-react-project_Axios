@@ -1,23 +1,55 @@
-.main-div{
-  background-color:rgba(0, 0, 0);
-  display: flex;
-  flex-direction:column;
-  text-align: center;
-  flex-wrap: nowrap;
+.main{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(50px,1fr));
+  grid-template-rows: max-content;
+  gap: 1rem;
+  grid-auto-rows: 150px;
+  background-color: black;
 }
-
 .btn{
-  width: 130px;
-  height: 50px;
-  color:rgba(40, 102, 27, 0.5);
-  font-size: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  border-radius: 35px;
+  text-align: center ;
+  background-color: white;
+  color: blue;
+}
+.imp{
+  border-radius: 80px;
+}
+.madd{
+  text-decoration: none;
+  text-shadow: none;
+  color: blue;
+}
+.madd:hover{
+  color:rgba(24, 227, 24,0.5);
+  transition: .2s;
+}
+.br{
+  width: 200px;
+  border-radius: 80px;
+
+}
+.dp22{
+  background-color: black;
+  color: white;
   
 }
-.btn:hover{
-  color:blue ;
-  transition: .4s;
-  background-color: rgb(173, 36, 36);
-  
+.items{
+  margin: 0px;
+  padding: 0px;
+}
+.item1{
+  margin-top: -5px;
+}
+.item2{
+  margin-top: -15px;
+}
+.item3{
+  margin-top: -15px;
+}
+.item4{
+  margin-top:  -15px;
+}
+.item5{
+  margin-top:  -15px;
 }
